@@ -1,0 +1,20 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import ICloudBypass from '../components/advanced/iCloudBypass';
+
+const ICloudBypassPage: React.FC = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-gray-50 p-6"
+    >
+      <div className="max-w-7xl mx-auto">
+        <ICloudBypass />
+      </div>
+    </motion.div>
+  );
+};
+
+export default ICloudBypassPage;
